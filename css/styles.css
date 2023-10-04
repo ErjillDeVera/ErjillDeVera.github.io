@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+}
+
+.wrapper{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+/* -----------------------------Navigation Bar -----------------------------*/
+.navbar {
+    background-color: #080606;
+    height: 70px;
+}
+
+.navbar-brand{
+    font-family: 'Bungee Inline', cursive;
+    color: #f0aec4;
+    font-size: 5.5rem;
+    font-weight: bold;
+    letter-spacing: 4px;
+}
+
+.navbar-brand:hover{
+    color: #ffcfdf;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-size: 0.95rem;
+    color: #fff;
+    font-family: 'Major Mono Display', monospace;
+}
+
+.nav-link:hover {
+    font-size: 0.95rem;
+    color: #ffcfdf;
+    font-family: 'Major Mono Display', monospace;
+}
