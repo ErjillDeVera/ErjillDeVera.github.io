@@ -32,3 +32,9 @@ body{
 .nav-item {
     padding: 0 18px;
   }
+
+  .nav-link {
+    font-size: 0.95rem;
+    color: #fff;
+    font-family: 'Major Mono Display', monospace;
+  }
