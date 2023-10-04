@@ -12,7 +12,7 @@ body{
     margin: 0 auto;
 }
 
-/* -----------------------------Navigation Bar -----------------------------*/
+/* ----------------------------- Navigation Bar -----------------------------*/
 .navbar {
     background-color: #080606;
     height: 70px;
@@ -44,4 +44,17 @@ body{
     font-size: 0.95rem;
     color: #ffcfdf;
     font-family: 'Major Mono Display', monospace;
+}
+
+/* ----------------------------- Banner Area -----------------------------*/
+.banner-area{
+    width: 100%;
+    height: 900px;
+    position: fixed;
+    top: 60px;
+    background-image: url(../images/BannerBackground.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(90%);
 }
