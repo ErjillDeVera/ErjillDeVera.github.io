@@ -12,7 +12,7 @@ body{
     margin: 0 auto;
 }
 
-/* -----------------------------Navigation Bar -----------------------------*/
+/* ----------------------------- Navigation Bar -----------------------------*/
 .navbar {
     background-color: #080606;
     height: 70px;
@@ -44,4 +44,140 @@ body{
     font-size: 0.95rem;
     color: #ffcfdf;
     font-family: 'Major Mono Display', monospace;
+}
+
+/* ----------------------------- Banner Area -----------------------------*/
+.banner-area{
+    width: 100%;
+    height: 900px;
+    position: fixed;
+    top: 60px;
+    background-image: url(../images/BannerBackground.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    filter: brightness(90%);
+}
+
+.banner-area h2{
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    color: #fff;
+    font-size: 5.625rem;
+    padding-top: 10%;
+    padding-left: 25%;
+    font-family: 'Bungee Inline', cursive;
+    line-height: 2;
+    position: absolute;
+    top: 130px;
+    width: 100%;
+    overflow:hidden;
+    border-right: .15rem solid #f0aec4;
+    white-space: nowrap;
+    animation:
+        typing 4.5s steps(40,end),
+        blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: f0aec4; }
+}
+
+
+.leaves{
+    position:absolute;
+    width:100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.leaves .set{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    pointer-events: none;
+}
+
+.leaves .set div{
+    position: absolute;
+    display: block;
+}
+
+.leaves .set div img{
+    width: 100px; 
+}
+
+.leaves .set div:nth-child(1){
+    left: 12%;
+    animation: animate 20s linear infinite;
+}
+
+.leaves .set div:nth-child(2){
+    left: 25%;
+    animation: animate 12s linear infinite;
+}
+
+.leaves .set div:nth-child(3){
+    left: 50%;
+    animation: animate 15s linear infinite;
+}
+
+.leaves .set div:nth-child(4){
+    left: 66%;
+    animation: animate 20s linear infinite;
+}
+
+.leaves .set div:nth-child(5){
+    left: 82%;
+    top: 45%;
+    animation: animate 14s linear infinite;
+}
+
+.leaves .set div:nth-child(6){
+    left: 95%;
+    top: 50%;
+    animation: animate 15s linear infinite;
+}
+
+
+@keyframes animate{
+    0%{
+        opacity:0;
+        top: -10%;
+        transform: translateX(-20px) rotate(45deg);
+    }
+    10%{
+        opacity:1;
+    }
+    20%{
+        transform: translateX(-20px) rotate(45deg);
+    }
+    40%{
+        transform: translateX(-20px) rotate(90deg);
+    }
+    60%{
+        transform: translateX(20px) rotate(180deg);
+    }
+    80%{
+        transform: translateX(-20px) rotate(45deg);
+    }
+    100%{
+        top: 110%;
+        transform: translateX(20px) rotate
+    }
 }
