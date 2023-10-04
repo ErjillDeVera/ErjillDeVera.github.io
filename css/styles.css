@@ -11,3 +11,8 @@ body{
     width: 1170px;
     margin: 0 auto;
 }
+
+.navbar {
+    background-color: #080606;
+    height: 70px;
+  }
