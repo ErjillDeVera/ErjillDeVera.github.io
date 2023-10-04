@@ -75,7 +75,7 @@ body{
     border-right: .15rem solid #f0aec4;
     white-space: nowrap;
     animation:
-        typing 3.5s steps(40,end),
+        typing 4.5s steps(40,end),
         blink-caret .75s step-end infinite;
 }
 
