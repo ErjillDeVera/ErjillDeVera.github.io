@@ -117,3 +117,7 @@ body{
     position: absolute;
     display: block;
 }
+
+.leaves .set div img{
+    width: 100px; 
+}
