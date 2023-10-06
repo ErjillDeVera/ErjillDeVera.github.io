@@ -60,11 +60,12 @@ body{
 
 .banner-area h2{
     text-transform: uppercase;
-    letter-spacing: .15em;
     color: #fff;
-    font-size: 5.625rem;
-    padding-top: 10%;
-    padding-left: 25%;
+    font-size: 6rem;
+    padding-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Bungee Inline', cursive;
     line-height: 2;
     position: absolute;
@@ -73,21 +74,6 @@ body{
     overflow:hidden;
     border-right: .15rem solid #f0aec4;
     white-space: nowrap;
-    animation:
-        typing 4.5s steps(40,end),
-        blink-caret .75s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: f0aec4; }
 }
 
 
@@ -255,7 +241,7 @@ body{
 
 .item .name{
     font-family: 'Bungee Inline', cursive;
-    font-size: 3rem;
+    font-size: 3.20rem;
     font-weight: bold;
     opacity:0;
     position:absolute;
@@ -267,7 +253,7 @@ body{
 
 .item .des{
     margin:20px 0;
-    font-size: 1.02rem;
+    font-size: 1.3rem;
     opacity:0;
     position:absolute;
     left:-45rem;
@@ -282,7 +268,7 @@ body{
     opacity: 0;
     position:absolute;
     left:-45rem;
-    top:3rem;
+    top:10rem;
     animation: showcontent 1s ease-in-out 0.6s forwards;
 }
 
