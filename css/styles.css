@@ -334,14 +334,17 @@ body{
 }
 
 .buttons button{
-    width:50px;
-    height: 50px;
+    width:4rem;
+    height: 4rem;
     border-radius: 50%;
-    border:1px solid #555;
+    border:1px solid #868484;
     transition: 0.5s;
+    color:#fff;
+    background-color: #a59e9e;
 }
 
 .buttons button:hover{
-    background-color: #868484;
+    background-color: #c2baba;
+    border:1px solid ##a59e9e;
 
 }
