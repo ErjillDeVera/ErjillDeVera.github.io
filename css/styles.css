@@ -5,6 +5,7 @@
 
 body{
     text-align: center;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 .wrapper{
@@ -48,7 +49,7 @@ body{
 /* ----------------------------- Banner Area -----------------------------*/
 .banner-area{
     width: 100%;
-    height: 900px;
+    height: 100%;
     position: fixed;
     top: 60px;
     background-image: url(../images/BannerBackground.jpg);
@@ -58,22 +59,25 @@ body{
     filter: brightness(90%);
 }
 
-.banner-area h2{
+.titlePage-area h2{
     text-transform: uppercase;
     color: #fff;
     font-size: 6rem;
-    padding-top: 10rem;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Bungee Inline', cursive;
     line-height: 2;
     position: absolute;
-    top: 130px;
-    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    height: 10rem;
+    width: 60rem;
     overflow:hidden;
     border-right: .15rem solid #f0aec4;
     white-space: nowrap;
+    background-color:#505050
 }
 
 
@@ -167,13 +171,82 @@ body{
     }
 }
 
+/* ----------------------------- Profile Pic -----------------------------*/
+.profilePic{
+    display: flex;
+    position: absolute;
+    height: 40rem;
+    width: 80%;
+    overflow:hidden;
+    white-space: nowrap;
+    left:2%;
+    top:100%;
+
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+/* ----------------------------- About Me -----------------------------*/
+.aboutMe{
+    height: 50rem;
+    width: 75%;
+    border-radius: 6% 0% 0% 6%;
+    position: absolute;
+    top: 95%;
+    left: 35%;
+    background-image: "images/EDVCTA.jpg";
+    border-radius: 100%;
+
+    animation: float 7s ease-in-out infinite;
+}
+
+.backgroundimg{
+    width:100%;
+    height:100%;
+    border-radius: 20px;
+}
+
+.aboutMe h1{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+
+    font-family: 'Bungee Inline', cursive;
+    font-size:5rem;
+    color: #5a5656;
+}
+
+.aboutMe p{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    width:80%;
+
+    font-size:2rem;
+    color: #5a5656;
+}
+
+
 /* ----------------------------- Content Area -----------------------------*/
 .content-area{
-    width: 100%;
-    height: 95vh;
     position: absolute;
-    transform: translate(0, 100rem);
-    top: 60px;
+    top:200%;
+    left:2%;
+    width: 80%;
+    height:80%;
+    border-radius: 50%;
+    animation: float 4s ease-in-out infinite;
 }
 
 #slide{
@@ -200,7 +273,7 @@ body{
     left:0;
     top:0;
     transform: translate(0,0);
-    border-radius: 0;
+    border-radius: 20px;
     width:100%;
     height:100%;
     box-shadow:none;
