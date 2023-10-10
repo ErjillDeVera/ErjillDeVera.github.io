@@ -199,14 +199,13 @@ body{
 
 /* ----------------------------- About Me -----------------------------*/
 .aboutMe{
-    height: 50rem;
+    height: 40rem;
     width: 75%;
     border-radius: 6% 0% 0% 6%;
     position: absolute;
-    top: 95%;
+    top: 105%;
     left: 35%;
     background-image: "images/EDVCTA.jpg";
-    border-radius: 100%;
 
     animation: float 7s ease-in-out infinite;
 }
@@ -214,26 +213,27 @@ body{
 .backgroundimg{
     width:100%;
     height:100%;
-    border-radius: 20px;
+    border-radius: 30px;
 }
 
 .aboutMe h1{
     position: absolute;
-    top: 10%;
-    left: 35%;
+    top: 20%;
+    right: 18%;
 
     font-family: 'Bungee Inline', cursive;
-    font-size:5rem;
+    font-size:4rem;
     color: #5a5656;
 }
 
 .aboutMe p{
     position: absolute;
-    top: 40%;
-    left: 10%;
-    width:80%;
+    top: 38%;
+    right: 18%;
+    width:50%;
+    text-align: right;
 
-    font-size:2rem;
+    font-size:1.5rem;
     color: #5a5656;
 }
 
@@ -242,9 +242,8 @@ body{
 .content-area{
     position: absolute;
     top:200%;
-    left:2%;
-    width: 80%;
-    height:80%;
+    width: 90%;
+    height:50rem;
     border-radius: 50%;
     animation: float 4s ease-in-out infinite;
 }
@@ -297,8 +296,8 @@ body{
 
 .item .content{
     position: absolute;
-    top:50%;
-    left:50%;
+    top:30%;
+    left:5%;
     width:300px;
     text-align: left;
     padding:0;
@@ -314,25 +313,21 @@ body{
 
 .item .name{
     font-family: 'Bungee Inline', cursive;
-    font-size: 3.20rem;
+    font-size: 3.5rem;
     font-weight: bold;
     color: #5a5656;
     opacity:0;
-    position:absolute;
-    left:-45rem;
-    top:-10rem;
     white-space: nowrap;
+
     animation: showcontent 1s ease-in-out 1 forwards;
 }
 
 .item .des{
     margin:20px 0;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     opacity:0;
     position:absolute;
-    left:-45rem;
-    top:-5rem;
-    width:41rem;
+    width:39rem;
     animation: showcontent 1s ease-in-out 0.3s forwards;
 }
 
@@ -340,8 +335,7 @@ body{
     border:none;
     opacity: 0;
     position:absolute;
-    left:-45rem;
-    top:10rem;
+    bottom: -350px;
 
     font-size: 1rem;
     font-family:'Bungee Inline', cursive;
@@ -349,11 +343,9 @@ body{
     letter-spacing: 0.5rem;
     color: #fff;
     letter-spacing: 1px;
-    padding: 13px 20px 13px;
     outline: 0;
     border: 0.15rem  solid #5a5656;
     cursor: pointer;
-    position: absolute;
     background-color: rgba(0, 0, 0, 0);
     user-select: none;
     -webkit-user-select: none;
