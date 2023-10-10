@@ -237,11 +237,22 @@ body{
     color: #5a5656;
 }
 
+/* ----------------------------- UX  Portfolio -----------------------------*/
+.uxportfolio{
+    position: absolute;
+    top:200%;
+    left:2%;
+    width: 96%;
+    height:50rem;
+    border-radius: 50%;
+    animation: float 4s ease-in-out infinite;
+}
+
 
 /* ----------------------------- Content Area -----------------------------*/
 .content-area{
     position: absolute;
-    top:200%;
+    top:300%;
     width: 90%;
     height:50rem;
     border-radius: 50%;
