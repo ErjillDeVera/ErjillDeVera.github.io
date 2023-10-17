@@ -8,14 +8,13 @@ body{
 }
 
 .wrapper{
-    width: 1170px;
     margin: 0 auto;
 }
 
 /* ----------------------------- Navigation Bar -----------------------------*/
 .navbar {
-    background-color: #080606;
-    height: 70px;
+    background-color: #000000;
+    height: 80px;
 }
 
 .navbar-brand{
@@ -49,9 +48,8 @@ body{
 /* ----------------------------- Banner Area -----------------------------*/
 .banner-area{
     width: 100%;
-    height: 900px;
+    height: 100%;
     position: fixed;
-    top: 60px;
     background-image: url(../images/BannerBackground.jpg);
     -webkit-background-size: cover;
     background-size: cover;
@@ -59,39 +57,43 @@ body{
     filter: brightness(90%);
 }
 
-.banner-area h2{
+.titlePage-area h1{
     text-transform: uppercase;
-    letter-spacing: .15em;
     color: #fff;
-    font-size: 5.625rem;
-    padding-top: 10%;
-    padding-left: 25%;
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Bungee Inline', cursive;
     line-height: 2;
     position: absolute;
-    top: 130px;
-    width: 100%;
+    top: 350px;
+    left: 1%;
     overflow:hidden;
     border-right: .15rem solid #f0aec4;
     white-space: nowrap;
-    animation:
-        typing 4.5s steps(40,end),
-        blink-caret .75s step-end infinite;
+    background-color:#5e5c5c
 }
 
-/* The typing effect */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: f0aec4; }
+.titlePage-area h3{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bungee Inline', cursive;
+    line-height: 2;
+    position: absolute;
+    top: 520px;
+    left: 1%;
+    overflow:hidden;
+    border-right: .15rem solid #f0aec4;
+    white-space: nowrap;
+    background-color:#5e5c5c
 }
 
-
+/* ----------------------------- Leaves Area -----------------------------*/
 .leaves{
     position:absolute;
     width:100%;
@@ -180,4 +182,240 @@ body{
         top: 110%;
         transform: translateX(20px) rotate
     }
+}
+
+/* ----------------------------- Profile Pic -----------------------------*/
+.profilePic{
+    position: absolute;
+    top: 850px;
+    width:30%;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+/* ----------------------------- About Me -----------------------------*/
+.aboutMe{
+    position: absolute;
+    top: 900px;
+    right: 0%;
+    border-radius: 6% 0% 0% 6%;
+    background-image: "images/EDVCTA.jpg";
+
+    animation: float 7s ease-in-out infinite;
+}
+
+.backgroundimg{
+    width:100%;
+    height:100%;
+    border-radius: 30px;
+}
+
+.aboutMe h2{
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    font-size: 3rem;
+    font-family: 'Bungee Inline', cursive;
+    color: #5a5656;
+}
+
+.aboutMe p{
+    position: absolute;
+    top: 38%;
+    right: 5%;
+    width:65%;
+
+    font-size: 1.5rem;
+    text-align: right;
+    color: #5a5656;
+}
+
+
+
+/* ----------------------------- Content Area -----------------------------*/
+.content-area{
+    position: absolute;
+    top:1500px;
+    width: 90%;
+    height:50rem;
+    border-radius: 50%;
+    animation: float 4s ease-in-out infinite;
+}
+
+#slide{
+    margin-top:50px;
+}
+
+.item{
+    width:18rem;
+    height:24rem;
+    background-position: 50% 50%;
+    display:inline-block;
+    transition: 0.5s;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+    top:50%;
+    transform: translate(0,-50%);
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #505050;
+}
+
+.item:nth-child(1),
+.item:nth-child(2){
+    left:0;
+    top:0;
+    transform: translate(0,0);
+    border-radius: 20px;
+    width:100%;
+    height:100%;
+    box-shadow:none;
+}
+
+.item:nth-child(3){
+    left:53%;
+}
+
+.item:nth-child(4){
+    left:calc(53% + 10rem);
+}
+
+.item:nth-child(5){
+    left:calc(53% + 20rem);
+}
+
+.item:nth-child(n+6){
+    left:calc(53% + 30rem);
+}
+
+.item .content{
+    position: absolute;
+    top:30%;
+    left:3%;
+    width:300px;
+    text-align: left;
+    padding:0;
+    color: #5a5656;
+    transform: translate(0,-50%);
+    display: none;
+}
+
+.item:nth-child(2) .content{
+    display: block;
+    z-index: 11111;
+}
+
+.item .name{
+    font-family: 'Bungee Inline', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #5a5656;
+    opacity:0;
+    white-space: nowrap;
+
+    animation: showcontent 1s ease-in-out 1 forwards;
+}
+
+.item .des{
+    margin:20px 0;
+    font-size: 1.5rem;
+    opacity:0;
+    position:absolute;
+    width:38rem;
+    animation: showcontent 1s ease-in-out 0.3s forwards;
+}
+
+.item button{
+    border:none;
+    opacity: 0;
+    position:absolute;
+    bottom: -300px;
+
+    font-size: 1rem;
+    font-family:'Bungee Inline', cursive;
+    font-weight: bold;
+    letter-spacing: 0.5rem;
+    color: #fff;
+    letter-spacing: 1px;
+    outline: 0;
+    border: 0.15rem  solid #5a5656;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+    animation: showcontent 1s ease-in-out 0.6s forwards;
+}
+
+.item button:after {
+    content: "";
+    background-color: #a59e9e;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+  }
+
+.item button:hover:after {
+    top: 0px;
+    left: 0px;
+}
+
+@media (min-width: 768px) {
+    .item button {
+      padding: 13px 50px 13px;
+    }
+  }
+
+
+@keyframes showcontent{
+    from{
+        opacity:0;
+        transform: translate(0,100px);
+        filter:blur(33px);
+    } to{
+        opacity:1;
+        transform: translate(0,0);
+        filter:blur(0);
+    }
+}
+
+.buttons {
+    position: absolute;
+    z-index: 11111;
+    text-align: center;
+    width:100%;
+    bottom:40px;
+    right: 2rem;
+}
+
+.buttons button{
+    width:4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border:0.25rem solid #868484;
+    transition: 0.5s;
+    color:#fff;
+    background-color: #a59e9e;
+}
+
+.buttons button:hover{
+    background-color: #c2baba;
+    border:1px solid ##a59e9e;
+
 }
