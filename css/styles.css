@@ -5,7 +5,6 @@
 
 body{
     text-align: center;
-    overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 
 .wrapper{
@@ -14,8 +13,8 @@ body{
 
 /* ----------------------------- Navigation Bar -----------------------------*/
 .navbar {
-    background-color: #080606;
-    height: 70px;
+    background-color: #000000;
+    height: 80px;
 }
 
 .navbar-brand{
@@ -51,7 +50,6 @@ body{
     width: 100%;
     height: 100%;
     position: fixed;
-    top: 60px;
     background-image: url(../images/BannerBackground.jpg);
     -webkit-background-size: cover;
     background-size: cover;
@@ -59,28 +57,43 @@ body{
     filter: brightness(90%);
 }
 
-.titlePage-area h2{
+.titlePage-area h1{
     text-transform: uppercase;
     color: #fff;
-    font-size: 6rem;
+    font-size: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: 'Bungee Inline', cursive;
     line-height: 2;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -70%);
-    height: 10rem;
-    width: 60rem;
+    top: 350px;
+    left: 1%;
     overflow:hidden;
     border-right: .15rem solid #f0aec4;
     white-space: nowrap;
-    background-color:#505050
+    background-color:#5e5c5c
 }
 
+.titlePage-area h3{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Bungee Inline', cursive;
+    line-height: 2;
+    position: absolute;
+    top: 520px;
+    left: 1%;
+    overflow:hidden;
+    border-right: .15rem solid #f0aec4;
+    white-space: nowrap;
+    background-color:#5e5c5c
+}
 
+/* ----------------------------- Leaves Area -----------------------------*/
 .leaves{
     position:absolute;
     width:100%;
@@ -173,15 +186,9 @@ body{
 
 /* ----------------------------- Profile Pic -----------------------------*/
 .profilePic{
-    display: flex;
     position: absolute;
-    height: 40rem;
-    width: 80%;
-    overflow:hidden;
-    white-space: nowrap;
-    left:2%;
-    top:100%;
-
+    top: 850px;
+    width:30%;
     animation: float 4s ease-in-out infinite;
 }
 
@@ -199,12 +206,10 @@ body{
 
 /* ----------------------------- About Me -----------------------------*/
 .aboutMe{
-    height: 40rem;
-    width: 75%;
-    border-radius: 6% 0% 0% 6%;
     position: absolute;
-    top: 105%;
-    left: 35%;
+    top: 900px;
+    right: 0%;
+    border-radius: 6% 0% 0% 6%;
     background-image: "images/EDVCTA.jpg";
 
     animation: float 7s ease-in-out infinite;
@@ -216,43 +221,32 @@ body{
     border-radius: 30px;
 }
 
-.aboutMe h1{
+.aboutMe h2{
     position: absolute;
     top: 20%;
-    right: 18%;
-
+    right: 5%;
+    font-size: 3rem;
     font-family: 'Bungee Inline', cursive;
-    font-size:4rem;
     color: #5a5656;
 }
 
 .aboutMe p{
     position: absolute;
     top: 38%;
-    right: 18%;
-    width:50%;
-    text-align: right;
+    right: 5%;
+    width:65%;
 
-    font-size:1.5rem;
+    font-size: 1.5rem;
+    text-align: right;
     color: #5a5656;
 }
 
-/* ----------------------------- UX  Portfolio -----------------------------*/
-.uxportfolio{
-    position: absolute;
-    top:200%;
-    left:2%;
-    width: 96%;
-    height:50rem;
-    border-radius: 50%;
-    animation: float 4s ease-in-out infinite;
-}
 
 
 /* ----------------------------- Content Area -----------------------------*/
 .content-area{
     position: absolute;
-    top:300%;
+    top:1500px;
     width: 90%;
     height:50rem;
     border-radius: 50%;
@@ -290,25 +284,25 @@ body{
 }
 
 .item:nth-child(3){
-    left:50%;
+    left:53%;
 }
 
 .item:nth-child(4){
-    left:calc(50% + 20rem);
+    left:calc(53% + 10rem);
 }
 
 .item:nth-child(5){
-    left:calc(50% + 40rem);
+    left:calc(53% + 20rem);
 }
 
 .item:nth-child(n+6){
-    left:calc(50% + 60rem);
+    left:calc(53% + 30rem);
 }
 
 .item .content{
     position: absolute;
     top:30%;
-    left:5%;
+    left:3%;
     width:300px;
     text-align: left;
     padding:0;
@@ -324,7 +318,7 @@ body{
 
 .item .name{
     font-family: 'Bungee Inline', cursive;
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: bold;
     color: #5a5656;
     opacity:0;
@@ -338,7 +332,7 @@ body{
     font-size: 1.5rem;
     opacity:0;
     position:absolute;
-    width:39rem;
+    width:38rem;
     animation: showcontent 1s ease-in-out 0.3s forwards;
 }
 
@@ -346,7 +340,7 @@ body{
     border:none;
     opacity: 0;
     position:absolute;
-    bottom: -350px;
+    bottom: -300px;
 
     font-size: 1rem;
     font-family:'Bungee Inline', cursive;
