@@ -1,15 +1,22 @@
+/* ----------------------------- Global Styling -----------------------------*/
+.container {
+    padding: 0 1rem;
+}
+
+
 /* ----------------------------- Navigation Bar -----------------------------*/
 
 .navbar {
     background-color: #524A4E;
 }
+
 .navbar-brand {
     font-family: 'Bungee Inline', cursive;
     font-size: 5.5rem;
 }
 
 .nav-item {
-    padding: 0 18px;
+    padding: 0 2rem;
 }
 
 .nav-link {
@@ -117,4 +124,36 @@
         top: 110%;
         transform: translateX(20px) rotate
     }
+}
+
+
+/* ----------------------------- Landing Section -----------------------------*/
+
+.welcomeTitle {
+    font-family: 'Bungee Inline', cursive;
+    color: #fff;
+    background-color:#5e5c5c;
+    border-right: .15rem solid #f0aec4;
+    font-size: clamp(3.2rem, 5vw, 5vw);
+
+    display: flex;
+    position: absolute;
+    top: clamp(200px, 40vh, 40vh);
+    left: clamp(3%, 5%, 10%);
+}
+
+
+.welcomeDescription {
+    font-family: 'Bungee Inline', cursive;
+    font-size: 2rem;
+    color: #fff;
+    background-color:#5e5c5c;
+    border-right: .15rem solid #f0aec4;
+    font-size: clamp(2.2rem, 2.5vw, 2.5vw);
+
+    display: flex;
+    position: absolute;
+    top:  clamp(350px, 55vh, 55vh);
+    left: clamp(3%, 5%, 10%);
+
 }
