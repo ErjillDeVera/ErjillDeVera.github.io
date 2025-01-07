@@ -63,7 +63,9 @@ body {
     font-weight: 400;
     overflow-x: hidden;
     position: relative;
-    background-color: #121212 !important;
+    background-image: url('./assets/images/BannerBackground.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
     color: #fff !important;
     font-family: 'Teko-Regular' sans-serif, !important;
 }
@@ -84,11 +86,12 @@ nav.navbar {
     z-index: 9999;
     transition:0.32 ease-in-out;
     font-family: Bungee-Inline;
+    background-color: #524A4E;
 }
 
 nav.navbar.scrolled {
     padding: 0px 0;
-    background-color: #121212;
+    background-color: #524A4E;
 }
 
 nav.navbar a.navbar-brand{
@@ -121,7 +124,7 @@ span.navbar-text {
 .social-icon a {
     width: 50px;
     height: 50px;
-    background: rgba(217,217,217,0.1);
+    background: #524A4E;
     display: inline-flex;
     border-radius: 50%;
     margin-right: 6px;
@@ -212,7 +215,7 @@ nav.navbar .navbar-toggler-icon {
 }
 
 .navbar .navbar-toggler-icon:focus {
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #524A4E;
 }
 
 nav.navbar .navbar-toggler-icon:after,
@@ -220,7 +223,7 @@ nav.navbar .navbar-toggler-icon:before {
     width: 24px;
     position: absolute;
     height: 2px;
-    background-color: #fff;
+    background-color: #524A4E;
     top: 0;
     left: 0;
     content: '';
@@ -234,7 +237,7 @@ nav.navbar .navbar-toggler-icon:after {
 
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
     transform: rotate(45deg);
-    background-color: #fff;
+    background-color:#524A4E;
     height: 2px;
 }
 
@@ -246,4 +249,230 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     border-color: transparent;
+}
+
+/* Banner */
+
+.banner {
+    margin-top: 0;
+    padding: 260px 0 100px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.banner h1 {
+    font-family: Bungee-Inline;
+    font-size: 65px;
+    font-weight: 700;
+    background: #524A4E;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    display: block;
+    
+}
+
+.banner h2 {
+    font-family: Bungee-Hairline;
+    font-size: 40px;
+    font-weight: 700;
+    background: #524A4E;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    margin-bottom: 40px;
+    display: inline;
+}
+
+.banner p {
+    font-family:Teko-Regular;
+    color: #FFFFFF;
+    background: #524A4E;
+    font-size: 30px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 100%;
+    display:block;
+    padding: 10px;
+}
+
+.banner button {
+font-family:Teko-Regular;
+    display: inline-block;
+  border-radius: 4px;
+  background-color: #524A4E;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 30px;
+  padding: 10px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.banner button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .banner button:hover span {
+    padding-right: 25px;
+  }
+  
+  .banner button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+txt-rotate > .wrap {
+    border-right: 0.08em solid #666;
+}
+
+
+/* ----------------------------- Leaves Area -----------------------------*/
+.leaves{
+    position:absolute;
+    top:  -10%;
+    width:100%;
+    height: 110vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.leaves .set{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left:0;
+    pointer-events: none;
+}
+
+.leaves .set div{
+    position: absolute;
+    display: block;
+}
+
+.leaves .set div img{
+    width: 100px; 
+}
+
+.leaves .set div:nth-child(1){
+    left: 12%;
+    animation: animate 20s linear infinite;
+}
+
+.leaves .set div:nth-child(2){
+    left: 25%;
+    animation: animate 29s linear infinite;
+}
+
+.leaves .set div:nth-child(3){
+    left: 50%;
+    animation: animate 15s linear infinite;
+}
+
+.leaves .set div:nth-child(4){
+    left: 66%;
+    animation: animate 33s linear infinite;
+}
+
+.leaves .set div:nth-child(5){
+    left: 82%;
+    top: 45%;
+    animation: animate 14s linear infinite;
+}
+
+.leaves .set div:nth-child(6){
+    left: 95%;
+    top: 50%;
+    animation: animate 21s linear infinite;
+}
+
+
+@keyframes animate{
+    0%{
+        opacity:0;
+        top: -10%;
+        transform: translateX(-20px) rotate(45deg);
+    }
+    10%{
+        opacity:1;
+    }
+    20%{
+        transform: translateX(-20px) rotate(45deg);
+    }
+    40%{
+        transform: translateX(-20px) rotate(90deg);
+    }
+    60%{
+        transform: translateX(20px) rotate(180deg);
+    }
+    80%{
+        transform: translateX(-20px) rotate(45deg);
+    }
+    100%{
+        top: 110%;
+        transform: translateX(20px) rotate
+    }
+}
+
+/* ----------------------------- Profile Pic -----------------------------*/
+.profilePic{
+    width:100%;
+}
+
+.about img {
+    animation: updown 3s linear infinite;
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+.about h1 {
+    font-family: Bungee-Inline;
+    font-size: 65px;
+    font-weight: 700;
+    background: #524A4E;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    display: block;   
+    text-align: right;
+}
+
+.about p {
+    font-family:Teko-Regular;
+    color: #FFFFFF;
+    background: #524A4E;
+    font-size: 30px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 100%;
+    display:block;
+    padding: 10px;
+    text-align: right;
 }
