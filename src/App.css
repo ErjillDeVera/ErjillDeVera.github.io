@@ -437,7 +437,7 @@ txt-rotate > .wrap {
     width:100%;
 }
 
-.about img {
+.banner img {
     animation: updown 3s linear infinite;
 }
 
@@ -451,28 +451,4 @@ txt-rotate > .wrap {
     100% {
         transform: translateY(-20px);
     }
-}
-
-.about h1 {
-    font-family: Bungee-Inline;
-    font-size: 65px;
-    font-weight: 700;
-    background: #524A4E;
-    letter-spacing: 0.8px;
-    line-height: 1;
-    display: block;   
-    text-align: right;
-}
-
-.about p {
-    font-family:Teko-Regular;
-    color: #FFFFFF;
-    background: #524A4E;
-    font-size: 30px;
-    letter-spacing: 0.8px;
-    line-height: 1.5em;
-    width: 100%;
-    display:block;
-    padding: 10px;
-    text-align: right;
 }

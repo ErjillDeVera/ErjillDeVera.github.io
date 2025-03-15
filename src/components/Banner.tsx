@@ -3,6 +3,7 @@ import { Row, Col, Container } from "react-bootstrap";
 import leaves1 from "../assets/images/leaves1.png";
 import leaves2 from "../assets/images/leaves2.png";
 import leaves3 from "../assets/images/leaves3.png";
+import profilePic from "../assets/images/Profilepic.png";
 
 function Banner() {
   const [loopNum, setLoopNum] = useState(0);
@@ -70,7 +71,7 @@ function Banner() {
       </div>
       <Container>
         <Row className="align-items-center">
-          <Col xs={12} md={9} xl={7}>
+          <Col xs={12} md={8} xl={8}>
             <h2>
               |<span className="wrap">{text}</span>
             </h2>
@@ -79,13 +80,16 @@ function Banner() {
               <br />
             </h1>
             <p>
-              I'm Erjill, A Data Scientist and UX Designer with a passion for
-              creating meaningful experiences - shaped by 3.5 years teaching in
-              Higher Education.
+              A Data Scientist and UX Designer with a passion for creating
+              meaningful experiences - shaped by 3.5 years teaching in Higher
+              Education.
             </p>
             <button className="button">
               <span>Let's connect </span>
             </button>
+          </Col>
+          <Col xs={12} md={4} xl={4}>
+            <img src={profilePic} alt="Profile-Pic" className="profilePic" />
           </Col>
         </Row>
       </Container>
