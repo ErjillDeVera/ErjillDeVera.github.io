@@ -79,9 +79,9 @@ function Banner() {
               <br />
             </h1>
             <p>
-              Welcome to my website! A place to share my adventures in life.{" "}
-              <br />
-              From work experience, projects and life-lessons to hobbies!
+              I'm Erjill, A Data Scientist and UX Designer with a passion for
+              creating meaningful experiences - shaped by 3.5 years teaching in
+              Higher Education.
             </p>
             <button className="button">
               <span>Let's connect </span>
