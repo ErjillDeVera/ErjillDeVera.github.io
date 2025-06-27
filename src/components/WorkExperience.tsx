@@ -82,3 +82,51 @@ const experiences = [
     ],
   },
 ];
+
+const WorkExperience: React.FC = () => (
+  <section id="work-experience">
+    <Container>
+      <Row xs={12} md={12} xl={12}>
+        <h1>Work Experience</h1>
+      </Row>
+      <Row className="WorkExperienceCarousel" xs={12} md={12} xl={12}>
+        <Carousel interval={10000} indicators={true}>
+          {experiences.map((exp, idx) => (
+            <Carousel.Item key={idx}>
+              <div className="work-experience-item">
+                <Row>
+                  <Col s={12} md={5} xl={5}>
+                    <Row>
+                      <h3>{exp.position}</h3>
+                    </Row>
+                    <Row>
+                      <Col>
+                        <h5>{exp.company}</h5>
+                      </Col>
+                      <Col>
+                        <h5>{exp.duration}</h5>
+                      </Col>
+                    </Row>
+                  </Col>
+                  <Col s={12} md={7} xl={7}>
+                    <ul className="work-experience-description"></ul>
+                    {exp.skills.map((skill, i) => (
+                      <li className="experienceDescriptors" key={i}>
+                        <h4 className="skillTitle"> {skill} </h4>
+                        <p className="descriptionParagraphs">
+                          {exp.description[i]}
+                        </p>
+                      </li>
+                    ))}
+                  </Col>
+                </Row>
+              </div>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </Row>
+    </Container>
+  </section>
+);
+
+export default WorkExperience;
