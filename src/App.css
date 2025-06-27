@@ -1,43 +1,43 @@
 /* Custom Fonts*/
 @font-face  {
     font-family: Bungee-Inline;
-    src: url("../public/fonts/BungeeInline-Regular.ttf");
+    src: url("/fonts/BungeeInline-Regular.ttf");
     font-weight: 400;
 }
 
 @font-face  {
     font-family: Bungee-Hairline;
-    src: url("../public/fonts/BungeeHairline-Regular.ttf");
+    src: url("/fonts/BungeeHairline-Regular.ttf");
     font-weight: 400;
 }
 
 @font-face {
     font-family: MajorMonoDisplay;
-    src: url("../public/fonts/MajorMonoDisplay-Regular.ttf");
+    src: url("/fonts/MajorMonoDisplay-Regular.ttf");
     font-weight: 400;
 }
 
 @font-face {
     font-family: Teko-Regular;
-    src: url('../public/fonts/Teko-Regular.ttf');
+    src: url('/fonts/Teko-Regular.ttf');
     font-weight: 400;
 }
 
 @font-face {
     font-family: Teko-Bold;
-    src: url('../public/fonts/Teko-Bold.ttf');
+    src: url('/fonts/Teko-Bold.ttf');
     font-weight: 400;
 }
 
 @font-face {
     font-family: Teko-Light;
-    src: url('../public/fonts/Teko-Light.ttf');
+    src: url('/fonts/Teko-Light.ttf');
     font-weight: 400;
 }
 
 @font-face {
     font-family: Teko-Medium;
-    src: url('../public/fonts/Teko-Medium.ttf');
+    src: url('/fonts/Teko-Medium.ttf');
     font-weight: 400;
 }
 
